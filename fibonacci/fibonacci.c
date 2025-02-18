@@ -8,7 +8,7 @@ int main () {
 	scanf("%d", &number);
 	printf("Enter initial count number: ");
 	scanf("%d",&a);
-	int b = a+1; // moved to down due to initial 
+	int b = a+1; // moved to down due to initial "b" values;
 	
 	
 	//Result design only!
