@@ -1,11 +1,15 @@
 #include<stdio.h>
 int main () {
 
-	int a = 0,b = 1, count;
+	int a = 0, count;
 	int number = 0;
 	
 	printf("Enter counting up to digit: ");
 	scanf("%d", &number);
+	printf("Enter initial count number: ");
+	scanf("%d",&a);
+	int b = a+1; // moved to down due to initial 
+	
 	
 	//Result design only!
 	printf("\n");
