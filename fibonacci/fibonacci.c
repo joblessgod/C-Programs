@@ -10,7 +10,6 @@ int main () {
 	scanf("%d",&a);
 	int b = a+1; // moved to down due to initial "b" values;
 	
-	
 	//Result design only!
 	printf("\n");
 	printf("Fabinacci Series up to '%d'",number);
