@@ -1,11 +1,11 @@
 #include <stdio.h>
-
 int main()
 {
-  int a;
-  printf("Hello, C!: ");
-  scanf("%d", &a); //scan
+	int i;
+     for (i = 0; i < 255; i++)
+     {
+          printf("> ASCII Num: %d\n  Character: %c\n\n", i, i);
+     }
 
-  printf("Numbasdasdasdasder: %d", a);
-  return 0;
+     return 0;
 }
