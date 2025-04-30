@@ -9,5 +9,8 @@
         "**/*tsconfig.json": true,
         ".cache": true,
         "retool.config.json": true
+    },
+    "files.associations": {
+        "stdio.h": "c"
     }
 }

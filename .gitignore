@@ -1,3 +1,7 @@
+# CUSTOM
+*.exe
+.vscode/*
+
 # Prerequisites
 *.d
 test
