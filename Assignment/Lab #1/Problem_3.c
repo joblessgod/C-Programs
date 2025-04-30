@@ -1,5 +1,8 @@
-#include <stdio.h>
+/* 
+Question: Write a C program to check whether a given number is positive or negative.
+*/
 
+#include <stdio.h>
 int main()
 {
     int givenNum = 0;
