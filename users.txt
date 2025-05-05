@@ -1,0 +1,4 @@
+1001 john student john123
+1002 alice faculty alice456
+1003 admin1 admin rootpass
+111 Sanchit student pass123
