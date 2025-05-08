@@ -3,17 +3,14 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "D:/Softwaree/min-gw/include",
-                "D:/Softwaree/min-gw/lib/gcc/mingw32/6.3.0/include",
-                "D:/Softwaree/min-gw/lib/gcc/mingw32/6.3.0/include-fixed"
+                "${workspaceFolder}/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "D:/Softwaree/min-gw/bin/gcc.exe",
+            "compilerPath": "C:/MinGW/bin/gcc.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64"

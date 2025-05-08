@@ -11,6 +11,10 @@
         "retool.config.json": true
     },
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "errno.h": "c",
+        "sdl.h": "c",
+        "string.h": "c",
+        "sdl_ttf.h": "c"
     }
 }
