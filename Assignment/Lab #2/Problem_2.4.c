@@ -20,7 +20,7 @@ void assignValue()
 
 int main()
 {
-     // assignValue();
+     assignValue();
      // if we make it visible it will update the value of b and PUBLIC fuction's ifelse will be trigger as 'true' and return updated value of b from that PRIVATE function.
 
      a = 100; // assign value of b

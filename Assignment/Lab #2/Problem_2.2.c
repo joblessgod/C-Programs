@@ -17,7 +17,6 @@ int main()
      printf("Size of \'char\' = %d byte\n", charSize);
      printf("Size of \'double\' = %d byte\n", doubleSize);
      printf("Size of \'string\' = %d byte\n", stringSize);
-     scanf("%d", &intSize);
      printf("Size of \'int\' = %d byte\n", intSize);
 
      return 0;
