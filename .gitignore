@@ -1,6 +1,8 @@
 # CUSTOM
 *.exe
 .vscode/*
+Student Management System
+source
 
 # Prerequisites
 *.d
