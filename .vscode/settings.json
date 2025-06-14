@@ -15,6 +15,7 @@
         "errno.h": "c",
         "sdl.h": "c",
         "string.h": "c",
-        "sdl_ttf.h": "c"
+        "sdl_ttf.h": "c",
+        "windows.h": "c"
     }
 }
