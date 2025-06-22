@@ -1,9 +1,7 @@
 /* Question:
     Write a C program using a while loop to calculate the sum of the first n natural numbers.
  */
-
 #include <stdio.h>
-#include <windows.h>
 
 // Color codes
 #define RESET "\033[0m"
@@ -13,16 +11,15 @@
 
 int main()
 {
-    SetConsoleTitle("Lab #5.2");
     int n, i, sum = 0;
 
-    printf("Enter a number: ");
+    printf("\nEnter a number: ");
     scanf("%d", &n);
 
     for (i = 0; i < n; i++)
     {
         sum = n * (n + 1) / 2;
     }
-    printf(GREEN"The sum of the first %d natural numbers: %d"RESET, n, sum);
+    printf(GREEN "The sum of the first %d natural numbers: %d\n" RESET, n, sum);
     return 0;
 }

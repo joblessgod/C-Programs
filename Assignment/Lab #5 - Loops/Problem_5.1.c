@@ -2,7 +2,6 @@
     Write a C program using a for loop to print the multiplication table of a number entered by the user.
  */
 #include <stdio.h>
-#include <windows.h>
 
 // Color codes
 #define RESET "\033[0m"
@@ -11,9 +10,7 @@
 
 int main()
 {
-
     int num, i;
-    SetConsoleTitle("Lab #5.1");
 
     printf("Enter a number: ");
     scanf("%d", &num);

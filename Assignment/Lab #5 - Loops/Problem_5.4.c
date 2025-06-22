@@ -1,45 +1,21 @@
 /* Question:
-     WAP to display the grade of a student based on the percentage using multiple if-else conditions (e.g., A for =90, B for 80–89, etc.).
+    Write a C program to print all even numbers from 1 to 100 using a loop.
  */
-
 #include <stdio.h>
-#include <windows.h>
 
 // Color codes
-#define RESET   "\033[0m"
-#define GREEN   "\033[32m"
-#define CYAN    "\033[36m"
-#define RED		"\033[31m"
+#define RESET "\033[0m"
+#define GREEN "\033[32m"
+#define CYAN "\033[36m"
+#define RED "\033[31m"
 
-int main(){
-	SetConsoleTitle("Lab #4.4");
-    
-    float percentage;
-    
-    printf(CYAN "Enter the student's percentage (0-100): " RESET);
-    scanf("%f", &percentage);
-    
-    if (percentage >= 90 && percentage <= 100) {
-        printf(GREEN "Grade: A (Excellent)\n"RESET);
+int main() {
+    int maxNum = 100;
+    printf("\nEven numbers from 1 to 100:\n");
+    for (int i = 0; i < maxNum; i++) {
+        if (i % 2 == 0) {
+            printf(CYAN "%d ", i);
+        }
     }
-    else if (percentage >= 80 && percentage < 90) {
-        printf(GREEN "Grade: B (Good)\n"RESET);
-    }
-    else if (percentage >= 70 && percentage < 80) {
-        printf(GREEN "Grade: C (Satisfactory)\n"RESET);
-    }
-    else if (percentage >= 60 && percentage < 70) {
-        printf(GREEN "Grade: D (Needs Improvement)\n"RESET);
-    }
-    else if (percentage >= 0 && percentage < 60) {
-        printf(RED "Grade: F (Fail / Poor)\n"RESET);
-    }
-    else {
-        printf(RED "Invalid percentage! Please enter a value between 0 and 100.\n"RESET);
-    }
-    
-	return 0;
+    return 0;
 }
-
-
-
