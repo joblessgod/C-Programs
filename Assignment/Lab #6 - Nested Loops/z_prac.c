@@ -1,6 +1,5 @@
 /*
-Write a C program to print the following left-angled triangle pattern using nested
-for loops:   
+Write a C program to print the following left-angled triangle pattern using nested for loops:   
                 *
               * *
             * * *
