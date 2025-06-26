@@ -1,0 +1,24 @@
+{
+	"short form of lsc": {
+		"scope": "c",
+		"prefix": "lsc",
+		"body": [
+			"/* Question:",
+			"   ${1:write question here}",
+			"*/",
+			"#include <stdio.h>",
+			"",
+			"#define RESET \"\\033[0m\"",
+			"#define GREEN \"\\033[32m\"",
+			"#define CYAN \"\\033[36m\"",
+			"",
+			"int main()",
+			"{",
+			"     ${2:/* code here */}",
+			"",
+			"    return 0;",
+			"}"
+		],
+		"description": "short form of lsc"
+	}
+}
