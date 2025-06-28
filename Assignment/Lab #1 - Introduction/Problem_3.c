@@ -1,5 +1,5 @@
-/* 
-Question: Write a C program to check whether a given number is positive or negative.
+/* Question
+    Write a C program to check whether a given number is positive or negative.
 */
 
 #include <stdio.h>
