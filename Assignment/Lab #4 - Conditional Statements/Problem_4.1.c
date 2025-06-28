@@ -1,5 +1,5 @@
-/* Question: 
-     WAP using nested if statements to check whether a given number is divisible by both 2 and 3.
+/* Question
+    WAP using nested if statements to check whether a given number is divisible by both 2 and 3.
  */
 
 #include <stdio.h>
@@ -9,6 +9,7 @@
 #define RESET   "\033[0m"
 #define GREEN   "\033[32m"
 #define RED		"\033[31m"
+#define CYAN    "\033[36m"
 
 int main()
 {

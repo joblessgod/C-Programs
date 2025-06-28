@@ -1,5 +1,5 @@
-/* Question:
-     WAP that takes a day number (1 to 7) as input and displays the corresponding weekday using a switch-case statement.
+/* Question
+    WAP that takes a day number (1 to 7) as input and displays the corresponding weekday using a switch-case statement.
  */
 
 #include <stdio.h>

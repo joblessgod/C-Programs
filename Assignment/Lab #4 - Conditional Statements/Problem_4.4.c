@@ -1,5 +1,5 @@
-/* Question:
-     WAP to display the grade of a student based on the percentage using multiple if-else conditions (e.g., A for =90, B for 80–89, etc.).
+/* Question
+    WAP to display the grade of a student based on the percentage using multiple if-else conditions (e.g., A for =90, B for 80ï¿½89, etc.).
  */
 
 #include <stdio.h>

@@ -1,5 +1,5 @@
-/* Question:
-     WAP to find the greatest of three numbers using nested if statements.
+/* Question
+    WAP to find the greatest of three numbers using nested if statements.
  */
 #include <stdio.h>
 #include <windows.h>
