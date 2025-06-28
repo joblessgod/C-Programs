@@ -1,6 +1,5 @@
-/* Question:
-     Write a C program to demonstrate and differentiate between global, local, static,
-     and non-static variables by printing their values from different functions.
+/* Question
+    Write a C program to demonstrate and differentiate between global, local, static, and non-static variables by printing their values from different functions.
 */
 
 #include <stdio.h>

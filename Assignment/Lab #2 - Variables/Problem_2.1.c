@@ -1,6 +1,5 @@
-/* Question:
-     Write a C program to declare and initialize variables of different data types (int,
-     char, float, string) and print their values to the screen.
+/* Question
+    Write a C program to declare and initialize variables of different data types (int, char, float, string) and print their values to the screen.
 */
 
 #include <stdio.h>

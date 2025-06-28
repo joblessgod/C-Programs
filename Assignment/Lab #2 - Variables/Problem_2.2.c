@@ -1,6 +1,5 @@
-/* Question:
-     Write a C program to display the size (in bytes) of various data types like int, float,
-     char, double, and string using the sizeof operator.
+/* Question
+    Write a C program to display the size (in bytes) of various data types like int, float, char, double, and string using the sizeof operator.
 */
 
 #include <stdio.h>

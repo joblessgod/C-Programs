@@ -1,6 +1,5 @@
-/* Question:
-     Write a C program to print all characters corresponding to ASCII values from 1 to
-     255.
+/* Question
+    Write a C program to print all characters corresponding to ASCII values from 1 to 255.
 */
 
 #include <stdio.h>
