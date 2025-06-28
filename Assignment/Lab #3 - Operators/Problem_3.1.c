@@ -1,4 +1,4 @@
-/* Question: 
+/* Question
      WAP to demonstrate the use of increamtnet (++) and decrement (--) operators with both prefix and postfix notation. Explain the output.
  */
 

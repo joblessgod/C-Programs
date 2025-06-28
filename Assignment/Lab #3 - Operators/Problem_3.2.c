@@ -1,5 +1,5 @@
-/* Question:
-     WAP to perform and display the result of logical AND, OR, and NOT operations on two boolean values.
+/* Question
+    WAP to perform and display the result of logical AND, OR, and NOT operations on two boolean values.
  */
 
 #include <stdio.h>

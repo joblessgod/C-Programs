@@ -1,5 +1,5 @@
-/* Question:
-     WAP that reads a string using gets() and displays it using puts().
+/* Question
+    WAP that reads a string using gets() and displays it using puts().
  */
 
 #include <stdio.h>

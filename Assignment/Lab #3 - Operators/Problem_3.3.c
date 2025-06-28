@@ -1,5 +1,5 @@
-/* Question:
-     WAP to input a float and a character using scanf() and print them using printf() with appropriate format specifiers.
+/* Question
+    WAP to input a float and a character using scanf() and print them using printf() with appropriate format specifiers.
  */
 
 #include <stdio.h>
