@@ -15,5 +15,5 @@ int factorial(int n) {
 
 int main() {
   int input = 5; // 5*4*3*2*1 = 120
-  return printf(GREEN "\nFactorial of %d is: %d\n" RESET, input, factorial(input));
+  return printf(GREEN "> Factorial of %d is: %d\n" RESET, input, factorial(input));
 }
