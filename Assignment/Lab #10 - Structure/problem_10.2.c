@@ -1,8 +1,5 @@
 /* Question:
-Write a C program to define a nested structure to store information about a book.
-The outer structure should contain the book's title, author, and price, while the
-nested structure should contain the publisher's name and year of publication. Input
-and display the details of the book using nested structure variables.
+Write a C program to define a nested structure to store information about a book. The outer structure should contain the book's title, author, and price, while the nested structure should contain the publisher's name and year of publication. Input and display the details of the book using nested structure variables.
 */
 #include <stdio.h>
 

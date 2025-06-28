@@ -1,7 +1,5 @@
 /* Question:
-Write a C program to define a structure to store information about a book (title,
-author, price) and then input and display the details of a book using structure
-variables.
+Write a C program to define a structure to store information about a book (title, author, price) and then input and display the details of a book using structure variables.
 */
 
 #include <stdio.h>
