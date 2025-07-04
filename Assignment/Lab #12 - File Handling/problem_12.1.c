@@ -20,7 +20,7 @@ int main()
 	fgets(name, sizeof(name), stdin);
 
 	size_t len = strlen(name);
-	if (len > 0 && name[len - 1] == '\n') {
+	if (len > 0 && name[len - 1] == '\n'){
 		name[len - 1] = '\0';
 	}
 	
@@ -28,8 +28,7 @@ int main()
 	scanf("%d", &roll);
 
 	fp = fopen("user.txt", "a+");
-	if (fp == NULL)
-	{
+	if (fp == NULL){
 		printf(RED "Error opening file" RESET);
 		return 1;
 	}
