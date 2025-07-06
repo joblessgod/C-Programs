@@ -20,7 +20,6 @@ int main(){
 	scanf("%d", &n);
 
 	ptr = dataArray;
-
 	printf(GREEN "Enter %d integer(s):\n" RESET, n);
 	for (int i = 0; i < n; i++){
 		printf("Element %d: ", i + 1);
