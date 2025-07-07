@@ -8,14 +8,16 @@
 #define GREEN "\033[32m"
 #define RED "\033[31m"
 
-int main() {
+int main()
+{
   char original[100], clone[100];
 
   printf("Enter your word: ");
-  fgets(original,sizeof(original),stdin);
+  fgets(original, sizeof(original), stdin);
   int length = strlen(original);
 
-  for (int i = 0; i <= length; i++){
+  for (int i = 0; i <= length; i++)
+  {
     clone[i] = original[i];
   }
 

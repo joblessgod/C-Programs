@@ -8,7 +8,8 @@
 #define GREEN "\033[32m"
 #define CYAN "\033[36m"
 
-int main() {
+int main()
+{
   char stringData[100];
 
   printf("Enter words: ");
@@ -17,7 +18,8 @@ int main() {
   int length = strlen(stringData) - 1;
 
   printf(GREEN "> Original String: %s" RESET, stringData);
-  for (int i = 0; i < length/2; i++) {
+  for (int i = 0; i < length / 2; i++)
+  {
     char temp = stringData[i];
     stringData[i] = stringData[length - i - 1];
     stringData[length - i - 1] = temp;
