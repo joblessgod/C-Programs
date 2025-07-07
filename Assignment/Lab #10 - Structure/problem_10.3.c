@@ -16,8 +16,8 @@ struct Book
 
 union BookUnion
 {
-	char title[100];
-	char author[100];
+	char title[999999];
+	char author[50];
 	float price;
 };
 
@@ -25,6 +25,5 @@ int main()
 {
 	printf(GREEN "Size of struct Book: %zu bytes\n" RESET, sizeof(struct Book));
 	printf(CYAN "Size of union BookUnion: %zu bytes\n" RESET, sizeof(union BookUnion));
-
 	return 0;
 }

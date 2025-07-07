@@ -15,21 +15,24 @@ struct Student
 	float marks;
 };
 
-void displayStudent(struct Student s) {
+void displayStudent(struct Student s)
+{
 	printf(GREEN "Student Details:\n" RESET);
 	printf(CYAN "Name: %s\n" RESET, s.name);
 	printf(CYAN "Roll Number: %d\n" RESET, s.roll_number);
 	printf(CYAN "Marks: %.2f\n" RESET, s.marks);
 }
 
-int main(){
+int main()
+{
 	struct Student s;
 
 	printf("Enter student name: ");
 	fgets(s.name, sizeof(s.name), stdin);
 	// Remove trailing newline if present
 	size_t len = strlen(s.name);
-	if (len > 0 && s.name[len-1] == '\n') s.name[len-1] = '\0';
+	if (len > 0 && s.name[len - 1] == '\n')
+		s.name[len - 1] = '\0';
 
 	printf("Enter roll number: ");
 	scanf("%d", &s.roll_number);

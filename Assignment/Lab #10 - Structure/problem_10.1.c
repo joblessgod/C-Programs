@@ -13,13 +13,12 @@ struct Book
 	char title[100];
 	char author[100];
 	float price;
-};
+} BookDB;
 
 int main()
 {
 	SetConsoleTitle("Lab 10th - Structure");
-
-	struct Book BookDB;
+	system("cls");
 
 	// data input from user
 	printf(CYAN "Enter book title: " RESET);
@@ -32,9 +31,9 @@ int main()
 	scanf("%f", &BookDB.price);
 
 	printf(GREEN "\nBook Details:\n");
-	printf("Title : %s", BookDB.title);
-	printf("Author: %s", BookDB.author);
-	printf("Price : $%.2f\n" RESET, BookDB.price);
+	printf("Title : \t%s", BookDB.title);
+	printf("Author: \t%s", BookDB.author);
+	printf("Price : \t$%.2f\n" RESET, BookDB.price);
 
 	return 0;
 }
