@@ -2,14 +2,17 @@
     WAP to find the greatest of three numbers using nested if statements.
  */
 #include <stdio.h>
+#include <conio.h>
 #include <windows.h>
 // Color codes
-#define RESET   "\033[0m"
-#define GREEN   "\033[32m"
-#define CYAN    "\033[36m"
+#define RESET "\033[0m"
+#define GREEN "\033[32m"
+#define CYAN "\033[36m"
 
-int main(){
+int main()
+{
     SetConsoleTitle("Lab #4.3");
+    system("cls");
 
     int a, b, c;
 
@@ -20,21 +23,24 @@ int main(){
     scanf("%d", &b);
     printf("c = ");
     scanf("%d", &c);
-    
-    printf(GREEN"\nFinding the greatest number...\n"RESET);
 
-    if (a > b) {
+    printf(GREEN "\nFinding the greatest number...\n" RESET);
+
+    if (a > b)
+    {
         if (a > c)
-            printf(GREEN"Greatest number is: %d\n"RESET, a);
+            printf(GREEN "Greatest number is: %d\n" RESET, a);
         else
-            printf(GREEN"Greatest number is: %d\n"RESET, c);
-    } else {
-        if (b > c)
-            printf(GREEN"Greatest number is: %d\n"RESET, b);
-        else
-            printf(GREEN"Greatest number is: %d\n"RESET, c);
+            printf(GREEN "Greatest number is: %d\n" RESET, c);
     }
-
+    else
+    {
+        if (b > c)
+            printf(GREEN "Greatest number is: %d\n" RESET, b);
+        else
+            printf(GREEN "Greatest number is: %d\n" RESET, c);
+    }
+    printf("\nPress any key to exit... ");
+    getch();
     return 0;
 }
-
