@@ -19,6 +19,7 @@ int main()
     for (i = 0; i < n; i++)
     {
         sum = n * (n + 1) / 2;
+        // sum = (n * (n + 1) * (2 * n + 1)) / 6;
     }
     printf(GREEN "The sum of the first %d natural numbers: %d\n" RESET, n, sum);
     return 0;
