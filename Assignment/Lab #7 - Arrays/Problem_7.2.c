@@ -19,7 +19,7 @@ int main () {
 		}
 		
 		if(minNum > arr[i]) {
-			minNum > arr[i];
+			minNum = arr[i];
 		}
 	}	
 	printf(GREEN"MaxNum: %d\n"RESET,maxNum);
