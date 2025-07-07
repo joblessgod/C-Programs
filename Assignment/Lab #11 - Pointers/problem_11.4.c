@@ -11,11 +11,10 @@
 
 int main()
 {
-	system("cls");
-
 	int num;
 	int *ptr = NULL;
-
+	
+	system("cls");
 	printf(CYAN "Enter the number of elements in the array: " RESET);
 	scanf("%d", &num);
 
