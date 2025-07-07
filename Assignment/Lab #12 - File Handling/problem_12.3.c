@@ -21,7 +21,7 @@ int main()
 		printf(RED "Error while opening file" RESET);
 		return 1;
 	}
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 4; i++)
 	{
 		fprintf(fp, "Language %d: %sDescription: %s\n", i + 1, langName, langDesc);
 	}
