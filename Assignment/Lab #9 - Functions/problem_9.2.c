@@ -8,12 +8,15 @@
 #define GREEN "\033[32m"
 #define RED "\033[31m"
 
-int factorial(int n) {
-  if (n == 0 || n == 1) return 1;
+int factorial(int n)
+{
+  if (n == 0)
+    return 1;
   return n * factorial(n - 1);
 }
 
-int main() {
+int main()
+{
   int input = 5; // 5*4*3*2*1 = 120
   return printf(GREEN "> Factorial of %d is: %d\n" RESET, input, factorial(input));
 }
