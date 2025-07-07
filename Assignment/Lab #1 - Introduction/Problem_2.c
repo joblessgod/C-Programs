@@ -12,8 +12,7 @@ int main()
 
     int Result = num % 2;
 
-    return (Result == 0) ?
-     printf("Given number is \"Even\".") 
-    :
-     printf("Given number is \"Odd\"."); //true = even || false == odd
+    return (Result == 0) ? printf("Given number is \"Even\".")
+                         : printf("Given number is \"Odd\".");
+    // true = even || false == odd
 }
