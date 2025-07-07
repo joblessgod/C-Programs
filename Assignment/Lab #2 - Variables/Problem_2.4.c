@@ -3,37 +3,45 @@
 */
 
 #include <stdio.h>
-int a;     // globle variable a and initialize
-int b = 0; // mark it as false
 
-void assignValue()
-{
-     printf("\nPrint from PRIVATE Function\n");
+// Global Variables
+int a;     // Global variable a
+int b = 0; // Global variable b, initialized to false
 
-     a = 200; // assign value of b
-     b = 1;   // mark it as true
+// Function Prototypes
+void assignValue();
 
-     printf("\tValue of a: %d\n", a);
-     printf("\tValue of b: %d\n", b);
+// Main Function
+int main() {
+    // Call the function to assign values to global variables
+    assignValue();
+
+    // Update the value of global variable a
+    a = 100; 
+
+    // Print the value of a from the main function
+    printf("\nPrint from PUBLIC Function\n");
+    printf("\tValue of a: %d\n", a);
+
+    // Check the value of b and print accordingly
+    if (b) {
+        printf("\tValue of b: %d\n", b);
+    } else {
+        printf("\t'b' is not assigned yet!\n");
+    }
+
+    return 0;
 }
 
-int main()
-{
-     assignValue();
-     // if we make it visible it will update the value of b and PUBLIC fuction's ifelse will be trigger as 'true' and return updated value of b from that PRIVATE function.
+// Function to assign values to global variables
+void assignValue() {
+    printf("\nPrint from PRIVATE Function\n");
 
-     a = 100; // assign value of b
+    // Assign values to global variables
+    a = 200; // Assign value to global variable a
+    b = 1;   // Mark b as true
 
-     printf("\nPrint from PUBLIC Function\n");
-     printf("\tValue of a: %d\n", a);
-
-     if (b)
-     {
-          printf("\tValue of b: %d\n", b);
-     }
-     else
-     {
-          printf("\t\'b\' is not assigned yet!\n");
-     }
-     return 0;
+    // Print the assigned values
+    printf("\tValue of a: %d\n", a);
+    printf("\tValue of b: %d\n", b);
 }
