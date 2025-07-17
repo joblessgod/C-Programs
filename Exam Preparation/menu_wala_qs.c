@@ -38,7 +38,7 @@ int main()
         case 3: {
             float length, width;
             printf("Enter length and width of rectangle: ");
-            scanf("%f %f", &length, &width);
+            scanf("%f %f", &length, &width); 
             float area = length * width;
             printf("Area of the rectangle: %.2f\n", area);
             break;
