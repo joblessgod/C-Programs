@@ -10,32 +10,36 @@ struct StudentData
 
 int main()
 {
-    struct StudentData std;
-    printf("Enter your name: ");
-    fgets(std.name, sizeof(std.name), stdin);
-    std.name[strcspn(std.name, "\n")] = '\0';
+    struct StudentData std[10];
+    int stdLen = 2;
+    for (int i = 0; i < stdLen; i++)
+    {
 
-    printf("Enter your roll number: ");
-    scanf("%d", &std.roll);
-    getchar();
+        printf("\nEnter details for student %d:\n", i + 1);
+        printf("Enter your name: ");
+        fgets(std[i].name, sizeof(std[i].name), stdin);
+        std[i].name[strcspn(std[i].name, "\n")] = '\0';
 
-    printf("Enter your address: ");
-    fgets(std.address, sizeof(std.address), stdin);
-    std.address[strcspn(std.address, "\n")] = '\0';
+        printf("Enter your roll number: ");
+        scanf("%d", &std[i].roll);
+        getchar();
 
+        printf("Enter your address: ");
+        fgets(std[i].address, sizeof(std[i].address), stdin);
+    }
     // write file
-    FILE *fptw = fopen("University.txt", "w");
+    FILE *fptw = fopen("University.txt", "a+");
     if (fptw == NULL)
     {
         printf("Error opening file");
         return 0;
     }
-    size_t written = fprintf(fptw, "%s, %d, %s", std.name, std.roll, std.address);
-    if (written > 0)
+    for (int i = 0; i < stdLen; i++)
     {
-        printf("Written Successfully! \n");
+        size_t written = fprintf(fptw, "%s, %d, %s", std[i].name, std[i].roll, std[i].address);
     }
     fclose(fptw);
+    printf("Written Successfully! \n");
 
     // read file
     FILE *fptr = fopen("University.txt", "r");
@@ -49,11 +53,12 @@ int main()
     while (fgets(line, sizeof(line), fptr))
     {
         sscanf(line, "%[^,], %d, %[^\n]", loadStd.name, &loadStd.roll, loadStd.address);
-    }
-    printf("Data from File:\n");
+    
+    printf("\n--- Records from file ---\n");
     printf("Name: %s\n", loadStd.name);
     printf("Roll: %d\n", loadStd.roll);
     printf("Address: %s\n", loadStd.address);
+    }
     fclose(fptr);
     return 0;
 }
