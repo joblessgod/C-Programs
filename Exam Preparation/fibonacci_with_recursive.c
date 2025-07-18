@@ -1,20 +1,23 @@
 #include <stdio.h>
 
-int getFibonacci(int n)
-{
-    int sum = 0;
-    if (n == 0)
-        return 1;
-    else
-    {
-        sum = n + getFibonacci(n - 1);
+int fibonacci(int n) {
+    if (n <= 1) {
+        return n;
     }
-    return sum;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-int main()
-{
-    int n = 5;
-    printf("Fibonacci is: %d", getFibonacci(n));
+int main() {
+    int terms, i;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &terms);
+
+    printf("Fibonacci Series: ");
+    for (i = 0; i < terms; i++) {
+        printf("%d ", fibonacci(i));
+    }
+    printf("\n");
+
     return 0;
 }
