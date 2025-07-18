@@ -3,15 +3,13 @@
 
 int main() {
     char str[] = "POKHARA";
-    int len = strlen(str);
+    int len = strlen(str); // 7
 
     for (int i = 0; i < 4; i++) {
-        // Print leading spaces (each space = 2 characters to align with letters + space)
-        for (int s = 0; s < i * 2; s++) {
+        for (int j = 0; j < i * 2; j++) {
             printf(" ");
         }
 
-        // Print the characters
         for (int j = i; j < len - i; j++) {
             printf("%c", str[j]);
             if (j != len - i - 1) {
