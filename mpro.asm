@@ -1,0 +1,2 @@
+MVI A, 
+STA
