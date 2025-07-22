@@ -1,5 +1,0 @@
-1001, admin, Administrator, Admin@123
-1002, john.doe, Manager, JohnDoe@2023
-1003, jane.smith, Staff, Jane#789
-1004, michael.brown, Staff, Mike!456
-1005, emily.davis, Intern, Emily$123
